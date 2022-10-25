@@ -5,12 +5,16 @@ public class Main implements Comparable <Main> {
     public static void main(String[] args) {
         // topic 9
 int animalcount = 3;
-int canspeakanimals = 0;
+int canspeakanimals = 1;
 
 try {
 int resultofcount = animalcount/canspeakanimals;}
 catch (ArithmeticException ae) {
     System.out.println( "You cant divide on zero ");
+} catch (Exception e){
+
+} finally {
+    System.out.println("We are in finally block");
 }
         System.out.println("I counted it !");
 Dog dog = new Dog();
